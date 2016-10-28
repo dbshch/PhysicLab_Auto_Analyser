@@ -1,0 +1,96 @@
+<b>The LaTeX code for the Table 1 is:<br></b>
+\begin{table}[!h]
+<br>\centering
+<br>\begin{tabular}{|c|c|}
+<br>\hline
+<br>\multicolumn{2}{|c|}{R {{ R }}[$\Omega]\pm0.01[\Omega]$, f {{ f1 }}[kHz]$\pm$0.001[Hz], $\mathcal{E}$ {{ E1 }}[V]$\pm$0.1[V]}\\
+<br>\hline
+<br>C {{ C }}[nF]$\pm$0.01[nF] & $T_{1/2}\ {{ T1 }}[\mu s]\pm0.001[\mu s]$\\
+<br>\hline
+<br>\end{tabular}
+<br>\caption{$T_{1/2}$ measurement data for a RC series circuit.}
+<br>\end{table}
+<br><b>The result for the Table 1:</b>
+<br>Theory \tau: {{ Tb1[0] }}
+<br>Error for theory \tau: {{ Tb1[1] }}
+<br>Relative error for theory \tau: {{ Tb1[2] }}%
+<br>Experiment \tau: {{ Tb1[3] }}
+<br>Error for experiment \tau: {{ Tb1[4] }}
+<br>Relative error for experiment \tau: {{ Tb1[5] }}%
+<br>Relative error of the result: {{ Tb1[6] }}
+
+
+<br><b>The LaTeX code for the Table 2 is:<br></b>
+\begin{table}[!h]
+<br>\centering
+<br>\begin{tabular}{|c|c|}
+<br>\hline
+<br>\multicolumn{2}{|c|}{R {{ R }}[$\Omega]\pm0.01[\Omega]$, f {{ f2 }}[kHz]$\pm$0.001[Hz], $\mathcal{E}$ {{ E2 }}[V]$\pm$0.1[V]}\\
+<br>\hline
+<br>L 0.01[H]$\pm$0[H] & $T_{1/2}\ {{ T2 }}[\mu s]\pm0.01[\mu s]$\\
+<br>\hline
+<br>\end{tabular}
+<br>\caption{$T_{1/2}$ measurement data for a RC series circuit.}
+<br>\end{table}
+<br><b>The result for the Table 2:</b>
+<br>Theory \tau: {{ Tb2[0] }}
+<br>Error for theory \tau: {{ Tb2[1] }}
+<br>Relative error for theory \tau: {{ Tb2[2] }}%
+<br>Experiment \tau: {{ Tb2[3] }}
+<br>Error for experiment \tau: {{ Tb2[4] }}
+<br>Relative error for experiment \tau: {{ Tb2[5] }}%
+<br>Relative error of the result: {{ Tb2[6] }}
+
+<br><b>The LaTeX code for the Table 3 is:<br></b>
+\begin{table}[!h]
+<br>\centering
+<br>\begin{tabular}{|c|c|}
+<br>\hline
+<br>\multicolumn{2}{|c|}{L 0.01[H]$\pm$0[H], C {{ C }}[nF]$\pm$0.01[nF], $\mathcal{E}$ {{ E3 }}[V]$\pm$0.1[V], f {{ f3 }}[kHz]$\pm$0.001[Hz]}\\
+<br>\hline
+<br>$\beta t=1.68$ & $T_{1/2}\ {{ T3 }}\mu s]\pm0.01[\mu s]$\\
+<br>\hline
+<br>\end{tabular}
+<br>\caption{$T_{1/2}$ measurement data for a RC series circuit.}
+<br>\end{table}
+<br><b>The result for the Table 3:</b>
+<br>Theory \tau: {{ Tb3[0] }}
+<br>Error for theory \tau: {{ Tb3[1] }}
+<br>Relative error for theory \tau: {{ Tb3[2] }}%
+<br>Experiment \tau: {{ Tb3[3] }}
+<br>Error for experiment \tau: {{ Tb3[4] }}
+<br>Relative error for experiment \tau: {{ Tb3[5] }}%
+<br>Relative error of the result: {{ Tb3[6] }}
+
+
+<br><b>The LaTeX code for the analized Table 4</b>
+<br>\begin{table}[!h]
+<br>\centering
+<br>\begin{tabular}{|c|c|c|c|c|}
+<br>\hline
+<br>\multicolumn{5}{|c|}{R {{ R }}$[\Omega]\pm0.01[\Omega]$, L 0.01[H]$\pm$0[H], C {{ C }}[nF]$\pm$0.01[nF]}\\
+<br>\hline
+<br>\multicolumn{5}{|c|}{$f_0$ {{ Tb4[2] }}[kHz]$\pm$0.001[Hz], $\mathcal{E}$ {{ E4 }}[V]$\pm$0.1[V]}\\
+<br>\hline
+<br> & $U_R[V]\pm0.01[V]$ & f[kHz]$\pm$0.001[Hz] & $f/f_0$ & $\varphi\,[^{\circ}]$\\
+<br>\hline
+{% for i in range(22) %}
+<br> {{ table[i+8] }}
+{% end %}
+<br>\end{tabular}
+<br>\caption{Measurement data for the $U_R$ vs. f dependence for a RLC resonant circuit.}
+<br>\end{table}
+<br><b>The result of Table 4</b>
+<br>The theoretical Q = {{ Tb4[0] }}
+<br>The error of theoretical Q = {{ Tb4[1] }}
+<br>The f_0 = {{ Tb4[2] }}
+<br>The error of f_0 = {{ Tb4[3] }}
+<br>f_1 = {{ Tb4[4] }}
+<br>f_2 = {{ Tb4[5] }}
+<br>The experimental Q = {{ Tb4[6] }}
+<br>The relative error between experimental and theoretical Q is {{ Tb4[7] }}%
+<br><b>The 2 graphs are:</b><br>
+<img align="center" width="50%" src="{{static_url(" p1.jpeg")}}" />
+<img align="center" width="50%" src="{{static_url(" p2.jpeg")}}" />
+
+
